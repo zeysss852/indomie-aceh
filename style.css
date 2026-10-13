@@ -3,14 +3,14 @@ html {
   background: 50% 50% no-repeat
 }
 h1 {text-align:center;
-    color:#F3FBAC;
+    color:#FFFFFF;
     font-size:2.4rem;
     letter-spacing:2px;
     text-shadow:2px 2px 0 rgba(0,0,0,0.15);}
 p {color:yellow;}
 
-body {background-color:#94D066;
-      border:6px solid yellow;
+body {background-color:#367588;
+      border:6px solid white;
       border-radius:25px;
       font-family:"Segoe UI", Tahoma, Arial, sans-serif;
       margin:12px;
