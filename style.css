@@ -10,11 +10,14 @@ h1 {text-align:center;
 p {color:yellow;}
 
 body {background-color:#6B4226;
-      border:6px solid #93C25B;
+      border:6px solid #C8A27C;
       border-radius:25px;
       font-family:"Segoe UI", Tahoma, Arial, sans-serif;
       margin:12px;
-      padding:10px 20px 20px;}
+      padding:10px 20px 20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.5),
+                 inset 0 0 0 2px rgba(255,255,255,0.25),
+                 inset 0 8px 18px rgba(0,0,0,0.35);}
 ul {list-style-type:none;
     text-align:center;
     margin:0;
@@ -25,40 +28,53 @@ li {display:inline;
 
 marquee {color:yellow}
 
-/* ---------- tambahan ---------- */
-
-/* navigasi interaktif */
 nav a {
   color:#F3FBAC;
   text-decoration:none;
   font-weight:600;
   padding:8px 22px;
-  border:2px solid #93C25B;
+  border:2px solid #C8A27C;
   border-radius:999px;
-  transition:background 0.25s, color 0.25s, transform 0.25s;
+  box-shadow:0 4px 0 #8a6240, 0 6px 10px rgba(0,0,0,0.4);
+  transition:background 0.25s, color 0.25s, transform 0.25s, box-shadow 0.25s;
 }
 nav a:hover,
 nav a:focus-visible {
-  background:#93C25B;
+  background:#C8A27C;
   color:#4a2c17;
   transform:translateY(-3px);
+  box-shadow:0 7px 0 #8a6240, 0 10px 14px rgba(0,0,0,0.45);
   outline:none;
 }
 nav a.aktif {
-  background:#93C25B;
+  background:#C8A27C;
   color:#4a2c17;
 }
 
-/* kartu logo + filosofi */
 .kartu {
   max-width:680px;
   margin:20px auto;
   padding:30px;
-  background:#FFF8D6;
-  border:4px solid #93C25B;
+  background:linear-gradient(160deg, #FFFCE8 0%, #FFF8D6 50%, #F1E3B5 100%);
+  border:4px solid #C8A27C;
   border-radius:25px;
   text-align:center;
-  box-shadow:0 8px 20px rgba(0,0,0,0.18);
+  box-shadow:0 2px 0 #a67c52,
+             0 6px 0 #8a6240,
+             0 10px 0 #6f4e32,
+             0 22px 35px rgba(0,0,0,0.6),
+             inset 0 3px 0 rgba(255,255,255,0.8),
+             inset 0 -6px 12px rgba(107,66,38,0.25);
+  transition:transform 0.3s, box-shadow 0.3s;
+}
+.kartu:hover {
+  transform:translateY(-4px);
+  box-shadow:0 2px 0 #a67c52,
+             0 6px 0 #8a6240,
+             0 10px 0 #6f4e32,
+             0 30px 45px rgba(0,0,0,0.6),
+             inset 0 3px 0 rgba(255,255,255,0.8),
+             inset 0 -6px 12px rgba(107,66,38,0.25);
 }
 .kartu img {
   display:block;
@@ -66,6 +82,7 @@ nav a.aktif {
   width:100%;
   max-width:240px;
   height:auto;
+  filter:drop-shadow(0 6px 6px rgba(107,66,38,0.35));
 }
 .kartu h2 {
   color:#6B4226;
@@ -77,6 +94,15 @@ nav a.aktif {
   line-height:1.7;
   text-align:justify;
   margin:0 0 14px;
+}
+
+.panel {
+  background:#F6EBC3;
+  border-radius:18px;
+  padding:20px 22px 6px;
+  box-shadow:inset 0 5px 10px rgba(107,66,38,0.35),
+             inset 0 -2px 0 rgba(255,255,255,0.8),
+             0 1px 0 rgba(255,255,255,0.9);
 }
 
 p {text-align:center;}
